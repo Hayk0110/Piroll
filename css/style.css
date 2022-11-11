@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+:root{
+    --blue: #10c9c3;
+    --black: #1d1d1d;
+    --gray: #787878;
+    --white: #fff;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    box-sizing: border-box;
+    transition: .2s all linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+*::selection{
+    background: var(--blue);
+    color: var(--black);
+}
+
+.container{
+    max-width: 1171px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    width: 180px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 23px 46px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--black);
+    color: var(--blue);
+}
+
+.heading{
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 100px;
+}
+
+/* ........ header ........ */
+
+header .container{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+}
+
+header .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 38px;
+}
+
+header .container .inner .logo img{
+    width: 31px;
+    height: 25px;
+}
+
+header .container .inner .navbar a{
+    font-size: 12px;
+    color: var(--black);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 31px;
+}
+
+header .container .inner .navbar a:hover{
+    color: var(--blue);
+}
+
+/* ........ home ........ */
+
+.home{
+    background: url(../images/macbook.jpg) no-repeat center;
+    background-size: cover;
+    height: 670px;
+}
+
+.home .container .content{
+    position: absolute;
+    right: 89px;
+    top: 183px;
+    width: 478px;
+}
+
+.home .container .content h1{
+    color: var(--black);
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.home .container .content p{
+    color: var(--gray);
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 32px;
+    margin-bottom: 39px;
+    text-transform: none;
+}
+
+/* ........ about ........ */
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .container .content{
+    text-align: center;
+    padding-bottom: 100px;
+    width: 619px;
+}
+
+.about .container .content p{
+    color: var(--gray);
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 38px;
+    margin-top: 41px;
+}
+
+/* ....... skills ........ */
+
+.skills{
+    background: #f8f9f9;
+    position: relative;
+}
+
+.skills .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 570px;
+}
+
+.skills .container .inner .content{
+    width: 50%;
+}
+
+.skills .container .inner .content .heading{
+    padding-top: 164px;
+}
+
+.skills .container .inner .content .box{
+    margin-top: 41px;
+}
+
+.skills .container .inner .content .box h3{
+    font-size: 12px;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.skills .container .inner .content .box h3 span{
+    margin-left: 18px;
+}
+
+.skills .container .inner .content .box .line{
+    width: 500px;
+    height: 3px;
+    background: #d8d8d8;
+}
+
+.skills .container .inner .content .box .line .active1{
+    background: var(--blue);
+    width: 75%;
+    height: 3px;
+}
+
+.skills .container .inner .content .box .line .active2{
+    background: var(--blue);
+    width: 90%;
+    height: 3px;
+}
+
+.skills .container .inner .content .box .line .active3{
+    background: var(--blue);
+    width: 65%;
+    height: 3px;
+}
+
+.skills .container .inner img{
+    width: 50%;
+    height: 100%;
+    position: absolute; top: 0; right: 0;
+}
+
+/* ........ numbers ........ */
+
+.number{
+    background: var(--blue);
+}
+
+.number .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 240px;
+    gap: 69px;
+}
+
+.number .container .box{
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.number .container .box i{
+    font-size: 48px;
+    margin-right: 28px;
+}
+
+.number .container .box .content h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.number .container .box .content p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 16px;
+    text-transform: uppercase;
+}
+
+/* ........ work ........ */
+
+.work .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.work .inner .box{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work .inner .box:hover .content{
+    top: 0; left: 0;
+    cursor: pointer;
+}
+
+.work .inner .box img{
+    width: 100%;
+    height: 100%;
+}
+
+.work .inner .box .content{
+    position: absolute;
+    top: -150%; left: -150%;
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 300px;
+}
+
+.work .inner .box .content i{
+    color: var(--white);
+    font-size: 48px;
+}
+
+.work .load{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    background: #f5f5f5;
+}
+
+.work .load a{
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.work .load a:hover{
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+/* ........ process ........ */
+
+.process .container{
+    text-align: center;
+}
+
+.process .container .inner{
+    display: flex;
+    justify-content: center;
+}
+
+.process .container .inner .content{
+    width: 507px;
+}
+
+.process .container .inner .content p{
+    font-size: 16px;
+    color: var(--gray);
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: none;
+    margin-top: 41px;
+    margin-bottom: 57px;
+}
+
+.process .container .image{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.process .container .image img{
+    height: 650px;
+    width: 100%;
+}
+
+.process .container .image .play{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: var(--blue);
+    position: absolute;
+    top: calc(325px - 40px);
+    left: calc(50% - 40px);
+}
+
+.process .container .image .play:hover{
+    background: var(--black);
+    cursor: pointer;
+}
+
+.process .container .image .play:hover i{
+    color: var(--blue);
+}
+
+.process .container .image .play i{
+    line-height: 85px;
+    font-size: 45px;
+    color: var(--white);
+}
+
+/* ....... services ........ */
+
+.services{
+    background: #f5f5f5;
+}
+
+.services .container{
+    padding: 20px 0;
+}
+
+.services .container .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services .container .inner .box{
+    width: 24%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .container .inner .box:hover{
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, .8);
+    cursor: pointer;
+}
+
+.services .container .inner .box .content{
+    text-align: center;
+    width: 240px;
+}
+
+.services .container .inner .box .content i{
+    color: var(--gray);
+    font-size: 48px;
+}
+
+.services .container .inner .box .content h5{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.services .container .inner .box .content p{
+    font-size: 16px;
+    color: var(--gray);
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: none;
+}
+
+/* ........ testimonials ........ */
+
+.testimonials{
+    background: var(--blue);
+    height: 500px;
+}
+
+
+.testimonials .container .content{
+    width: 810px;
+    text-align: center;
+    margin: auto;
+    padding-top: 161px;
+}
+
+.testimonials .container .content h5{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 37px;
+    text-transform: none;
+}
+
+.testimonials .container .content p{
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.testimonials .container .inner{
+    width: 40px;
+    height: 10px;
+    margin:  0 auto;
+    margin-top: 109px;
+}
+
+.testimonials .container .inner .controls{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.testimonials .container .inner .controls .img-btn{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--white);
+    opacity: .5;
+    cursor: pointer;
+}
+
+.testimonials .container .inner .controls .img-btn.active{
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+/* ........ icons ........ */
+
+.icons{
+    height: 200px;
+}
+
+.icons .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons .container .box{
+    width: 20%;
+    height: 200px;
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons .container .box img{
+    width: 125px;
+    cursor: pointer;
+}
+
+/* ........ contact ........ */
+
+.contact{
+    background: #f5f5f5;
+}
+
+.contact .container{
+    text-align: center;
+}
+
+.contact .container .text{
+    width: 545px;
+    margin: 0 auto;
+}
+
+.contact .container .text p{
+    font-size: 16px;
+    color: var(--gray);
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 35px;
+    margin-bottom: 41px;
+}
+
+.contact .container form{
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.contact .container form input::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .container form .inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact .container form .inputBox input{
+    margin: 0 30px;
+    width: 320px;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--black);
+    text-transform: none;
+    padding: 20px;
+}
+
+.contact .container form #title{
+    width: 640px;
+    margin: 30px;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--black);
+    text-transform: none;
+    padding: 20px;
+}
+
+.contact .container form textarea{
+    width: 640px;
+    height: 140px;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--black);
+    text-transform: none;
+    padding: 20px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.contact .container form textarea::placeholder{
+    text-transform: capitalize;
+}
+
+/* ........ footer ........ */
+
+footer{
+    background: #141414;
+    height: 284px;
+    display: flex;
+    align-items: center;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .box h6{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 27px;
+}
+
+footer .container .box p{
+    color: var(--gray);
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: none;
+    line-height: 27px;
+}
+
+footer .container .box.link{
+    display: flex;
+    gap: 30px;
+}
+
+footer .container .box a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: var(--gray);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+footer .container .box a:hover{
+    color: var(--blue);
+}
+
+
+
+
+
+
+/* ........ media ........ */
+
+@media(max-width: 1115px){
+
+    .skills .container .inner{
+        height: 520px;
+    }
+
+    .skills .container .inner .content .box .line{
+        width: 400px;
+    }
+
+    .skills .container .inner img{
+        width: 45%;
+    }
+
+    .work .inner .box{
+        height: 250px;
+    }
+
+    .work .inner .box .content{
+        line-height: 250px;
+    }
+
+}
+
+@media(max-width: 980px){
+
+   .home{
+       height: 550px;
+       display: flex;
+       align-items: center;
+   }
+
+    .home .container .content{
+        position: static;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .skills .container .inner{
+        justify-content: center;  
+        align-items: center;  
+    }
+
+    .skills .container .inner .content{
+        width: 80%;
+        text-align: center;
+    }
+
+    .skills .container .inner .content .heading{
+        padding-top: 0;
+    }
+
+    .skills .container .inner .content .box .line{
+        width: 100%;
+    }
+
+    .skills .container .inner img{
+        display: none;
+    }
+
+    .work .inner .box{
+        height: 220px;
+    }
+
+    .process .container .image img{
+        height: 400px;
+        width: 80%;
+    }
+
+    .process .container .image .play{
+        top: calc(200px - 40px);
+    }
+
+}
+
+@media(max-width: 870px){
+
+    .work .inner .box{
+        width: 50%;
+        height: 400px;
+    }
+
+    .work .inner .box .content{
+        line-height: 400px;
+    }
+
+    .number{
+        display: none;
+    }
+
+    .testimonials{
+        display: none;
+    }
+
+    .icons{
+        display: none;
+    }
+    
+}
